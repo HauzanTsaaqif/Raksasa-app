@@ -1,0 +1,32 @@
+.clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .hour-hand {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform-origin: bottom center;
+    width: 4px;
+    height: 80px;
+    background-color: #000;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .selected-hour {
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .rotation-range {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+  

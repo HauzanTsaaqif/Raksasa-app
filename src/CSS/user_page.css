@@ -1,0 +1,256 @@
+.ProfilContainer{
+    background-color: #EFEFEF;
+    height: max-content;
+    border-radius: 0 0 140px 140px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 32px;
+}
+
+.FotoProfilBorder{
+    background-color: #686868;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.FotoProfilBorder img{
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ProfilContainer h1{
+    color: #112B3C;
+    font-size: 28px;
+    font-weight: 650;
+    margin-bottom: 0;
+}
+
+.CalenderContainer{
+    background-color: #EFEFEF;
+    border-radius: 60px;
+    height: max-content;
+    width: 92%;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 32px;
+}
+
+.CalenderContainer h2{
+    margin-top: 10px;
+    font-size: 26px;
+    text-align: left;
+    color: #112B3C;
+    text-indent: 40px;
+}
+
+.ListNote{
+    width: 94%;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.Note{
+    background-color: #112B3C;
+    width: 160px;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+    border-radius: 30px;
+    object-fit: cover;
+    flex: 1;
+}
+
+.Note p{
+    padding: 0;
+    margin: 0;
+    text-indent: 0;
+    color: #EFEFEF;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 22px;
+    margin-right: 20px;
+}
+
+.Note h1{
+    padding: 0;
+    margin: 0;
+    color: #EFEFEF;
+    font-size: 22px;
+    margin-left: 20px;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.inputNoteContainer{
+    background-color: #EFEFEF;
+    width: 700px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+}
+
+.inputNoteContainer h1{
+    color: #112B3C;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.inputNoteContainer textarea {
+    background-color: #EFEFEF;
+    color: #F66B0E;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 76%;
+    border: none;
+}
+
+.inputNoteContainer textarea:focus {
+    outline: none; 
+    border-bottom: none; 
+    background-color: #E4E4E4;
+}
+
+.inputNoteButton{
+    width: 100%;
+    text-align: right;
+}
+
+.inputNoteContainer button{
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #E4E4E4;
+    background-color: #F66B0E;
+    margin-left: 10px;
+}
+
+.CalenderContainer button{
+    padding: 6px;
+    width: 17%;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #E4E4E4;
+    background-color: #F66B0E;
+    margin-top: 20px;
+    margin-left: 74%;
+    margin-bottom: 24px;
+}
+
+.CalenderContainer button:hover{
+    background-color: #112B3C;
+}
+
+.ReportContainer{
+    background-color: #EFEFEF;
+    border-radius: 60px;
+    height: max-content;
+    width: 92%;
+    margin: 0 auto;
+    padding-top: 10px;    
+}
+
+.ReportContainer button{
+    padding: 6px;
+    width: 17%;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #E4E4E4;
+    background-color: #F66B0E;
+    margin-top: 20px;
+    margin-left: 74%;
+    margin-bottom: 24px;
+}
+
+.ReportContainer select{
+    margin: 0;
+    background-color: #D9D9D9;
+    color: #112B3C;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+    padding: 6px 14px 6px 14px;
+    margin-left: 50px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.ReportContainer h2{
+    margin-top: 10px;
+    font-size: 26px;
+    text-align: left;
+    color: #112B3C;
+    text-indent: 40px;
+    margin-bottom: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-radius: 14px 14px 0 0;
+    overflow: hidden;
+    width: 90%;
+}
+ 
+th, td {
+    padding: 4px 20px 4px 20px;
+    font-size: 20px;
+}
+
+th{
+    background-color: #205374;
+    border: none;
+    text-align: left;
+}
+
+td{
+    border: none;
+    border-bottom: 2px solid black;
+    color: #205374;
+    font-weight: 700;
+    text-align: left;
+}
+
+@media (max-width: 480px) {
+    .CalenderContainer button{width: 26%;font-size: 120%;margin-left: 60%;}
+    .ReportContainer button{width: 26%;font-size: 120%;margin-top: 20px;margin-left: 60%;}
+    .Jadwal{
+        height: 90%;
+        width: 40%;
+        margin-right: 2%;
+    }
+    
+    .Jadwal h1{
+        font-size: 280%;
+    }
+    
+    .Jadwal h2{
+        font-size: 160%;
+    }
+    
+    .BtnJadwal{
+        margin-left: 1%;
+        width: 40%;
+        height: 90%;
+    }
+    
+    .BtnJadwal img{
+        width: 60%;
+        height: 60%;
+    }
+}

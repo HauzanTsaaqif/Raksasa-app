@@ -1,0 +1,136 @@
+.TopicListContainer{
+    background-color: #EFEFEF;
+    border-radius: 30px;
+    width: 94%;
+    height: max-content;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+.TopicContainer{
+    position: relative;
+    background-color: #F9F2ED;
+    border-radius: 20px;
+    width: 93%;
+    height: 140px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    box-shadow: 0 5px 20px 6px #dedede;
+    display: flex;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.TopicContainer:hover{
+    filter: drop-shadow(0 0 0 #48b6ff);;
+}
+
+.TopicContainer img{
+    border-radius: 60%;
+    height: 86%;
+    padding: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0, -50%);
+}
+
+.TopicTittle{
+    margin-left: 160px;
+    text-align: left;
+}
+
+.TopicTittle h3{
+    font-size: 20px;
+    color: #F66B0E;
+    margin: 12px 0 0 0;
+}
+
+.TopicTittle h2{
+    font-size: 30px;
+    color: #112B3C;
+    margin: 4px 0 0 0;
+}
+
+.TopicTittle p{
+    font-size: 18px;
+    color: #7f7f7f;
+    margin: 6px 0 0 0;
+}
+
+.curtainContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5f5f5fa9;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer{
+    background-color: #EFEFEF;
+    width: 380px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+}
+
+#linkBtn{
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 20px;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
+    background-color: #205375;
+    color: #EFEFEF;
+}
+
+#startBtn{
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 20px;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
+    background-color: #F66B0E;
+    color: #EFEFEF;
+}
+
+.iconIpa{
+    background-image: url('..\\src\\assets\\topic_logo\\IPA_logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .TopicContainer img{
+        border-radius: 60%;
+        height: 86%;
+        padding: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        transform: translate(0, -50%);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .TopicContainer img{height: 66%;}
+    .TopicTittle{margin-left: 33%;}
+    
+    .TopicTittle h3{font-size: 120%;}
+    
+    .TopicTittle h2{font-size: 140%;margin: 2px 0 0 0;}
+    
+    .TopicTittle p{font-size: 120%;color: #7f7f7f;margin: 2px 0 0 0;}
+  }

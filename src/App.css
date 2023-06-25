@@ -1,0 +1,40 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mainContainer{
+  width: 960px;
+  height: max-content;
+  background-color: #205375;
+  box-shadow: 0 0 20px rgba(7, 7, 7, 0.3);
+}
+
+.breakline::before {
+  content: "";
+  display: block;
+  height: 6px;
+  background-color: #F66B0E;
+  width: 160px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h1{
+  font-size: 32px;
+  color: #EFEFEF;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .mainContainer{width: 768px;}
+  h1{margin-top: 30px;}
+}
+
+@media (max-width: 480px) {
+  .mainContainer{width: 100%;}
+  h1{font-size: 28px;}
+}
+
