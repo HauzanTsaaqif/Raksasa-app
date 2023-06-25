@@ -1,7 +1,9 @@
 const { Pool } = require('pg');
 const cors = require('cors');
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://raksasa-app.vercel.app'
+}));
 
 const pool = new Pool({
   connectionString: "postgres://default:fVv3H2yWrDoG@ep-tiny-limit-795119.us-east-1.postgres.vercel-storage.com:5432/verceldb",
