@@ -1,6 +1,8 @@
+const express = require('express');
 const { Pool } = require('pg');
 const cors = require('cors');
 
+const app = express();
 app.use(cors());
 
 const pool = new Pool({
@@ -30,4 +32,8 @@ app.post('/login', (req, res) => {
         }
       }
     });
+  });
+
+  const server = app.listen(3008, () => {
+    console.log('Server aktif di port 3008');
   });
