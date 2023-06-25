@@ -3,7 +3,13 @@ const { Pool } = require('pg');
 const cors = require('cors');
 
 const app = express();
+<<<<<<< HEAD:server.js
 app.use(cors());
+=======
+app.use(cors({
+  origin: 'https://raksasa-app.vercel.app'
+}));
+>>>>>>> c6dd3cd1889c1f08992a6aae1d04b235a3a2c881:src/server.js
 
 const pool = new Pool({
   connectionString: "postgres://default:fVv3H2yWrDoG@ep-tiny-limit-795119.us-east-1.postgres.vercel-storage.com:5432/verceldb",
@@ -33,7 +39,10 @@ app.post('/login', (req, res) => {
       }
     });
   });
+<<<<<<< HEAD:server.js
 
   const server = app.listen(3008, () => {
     console.log('Server aktif di port 3008');
   });
+=======
+>>>>>>> c6dd3cd1889c1f08992a6aae1d04b235a3a2c881:src/server.js
