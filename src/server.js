@@ -1,4 +1,7 @@
 const { Pool } = require('pg');
+const cors = require('cors');
+
+app.use(cors());
 
 const pool = new Pool({
   connectionString: "postgres://default:fVv3H2yWrDoG@ep-tiny-limit-795119.us-east-1.postgres.vercel-storage.com:5432/verceldb",
@@ -9,8 +12,9 @@ const pool = new Pool({
 
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
-    const searchSql = 'SELECT * FROM raksasa_db.data_account WHERE username = $1';
-    const selectUser = [username];
+    const searchSql = 'SELECT * FROM raksasa_db.data_account WHERE username = $1 AND password = $2';
+    const selectUser = [username, password];
+
   
     pool.query(searchSql, selectUser, (err, result) => {
       if (err) {
