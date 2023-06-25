@@ -41,7 +41,7 @@ function LoginPage() {
   }  
 
   const handleLogin1 = () => {
-    fetch('ep-tiny-limit-795119-pooler.us-east-1.postgres.vercel-storage.com/api/login', { 
+    fetch('https://ep-tiny-limit-795119-pooler.us-east-1.postgres.vercel-storage.com/login', { 
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: {
