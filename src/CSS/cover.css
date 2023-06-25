@@ -80,11 +80,11 @@
 }
 
 .img2{
-    background-image: url('..\\src\\assets\\slide\\221934.jpg');
+    background-image: url('..\src\assets\slide\221934.jpg');
 }
 
 .img3{
-    background-image: url('..\\src\\assets\\slide\\222042.jpg');
+    background-image: url('..\src\assets\slide\222042.jpg');
 }
 
 #slideset1 {
