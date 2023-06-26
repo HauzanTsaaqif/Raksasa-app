@@ -25,7 +25,7 @@ function MateriPage() {
   }
 
   useEffect(() => {
-    fetch('http://192.168.100.145:8081/searchAccount', {
+    fetch('https://capable-bejewled-seahorse.glitch.me/searchAccount', {
       method: 'POST',
       body: JSON.stringify({ username: username }),
       headers: {
