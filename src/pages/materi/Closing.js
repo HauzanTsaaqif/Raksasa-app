@@ -28,7 +28,7 @@ function ClosingPage() {
 
   const handleSubmit = () =>{
     setIsVisible(true);
-    fetch('https://capable-bejewled-seahorse.glitch.me/data-nilai', {
+    fetch('https://evanescent-evening-range.glitch.me/data-nilai', {
     method: 'POST',
     body: JSON.stringify({ nama, kelas, userId, nilai }),
     headers: {
