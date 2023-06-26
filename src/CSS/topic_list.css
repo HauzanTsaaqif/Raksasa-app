@@ -105,13 +105,6 @@
     color: #EFEFEF;
 }
 
-.iconIpa{
-    background-image: url('..\\src\\assets\\topic_logo\\IPA_logo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 @media (max-width: 768px) {
     .TopicContainer img{
         border-radius: 60%;
