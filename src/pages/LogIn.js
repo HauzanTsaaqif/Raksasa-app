@@ -41,7 +41,7 @@ function LoginPage() {
   }  
 
   const handleLogin1 = () => {
-    fetch('https://ep-tiny-limit-795119-pooler.us-east-1.postgres.vercel-storage.com/login', { 
+    fetch('https://capable-bejewled-seahorse.glitch.me/login', { 
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: {
