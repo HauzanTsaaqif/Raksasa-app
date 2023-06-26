@@ -25,7 +25,7 @@ function MateriPage() {
   }
 
   useEffect(() => {
-    fetch('https://capable-bejewled-seahorse.glitch.me/searchAccount', {
+    fetch('https://evanescent-evening-range.glitch.me/searchAccount', {
       method: 'POST',
       body: JSON.stringify({ username: username }),
       headers: {
