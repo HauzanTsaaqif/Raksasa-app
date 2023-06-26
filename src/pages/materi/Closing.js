@@ -27,6 +27,7 @@ function ClosingPage() {
   }, [location.search]);
 
   const handleSubmit = () =>{
+    setIsVisible(true);
     fetch('http://192.168.100.145:8081/data-nilai', {
     method: 'POST',
     body: JSON.stringify({ nama, kelas, userId, nilai }),
@@ -37,7 +38,6 @@ function ClosingPage() {
     .then(res => res.json())
     .then(data => {
       console.log('Data berhasil dimasukkan:', data);
-      setIsVisible(true);
     })
     .catch(err => console.log(err)); 
   }

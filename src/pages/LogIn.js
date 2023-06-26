@@ -17,7 +17,7 @@ function LoginPage() {
   
   const handleLogin = () => {
     // Kirim data ke server menggunakan fetch atau library lainnya
-    fetch('http://192.168.100.145:8081/login', {
+    fetch('http://192.168.100.145:3306/login', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: {

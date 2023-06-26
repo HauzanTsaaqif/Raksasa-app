@@ -76,15 +76,15 @@
 }
 
 .img1{
-    background-image: url('..\\src\\assets\\slide\\221843.jpg');
+    background-image: url('../assets/slide/221843.jpg');
 }
 
 .img2{
-    background-image: url('..\\src\\assets\\slide\\221934.jpg');
+    background-image: url('../assets/slide/221934.jpg');
 }
 
 .img3{
-    background-image: url('..\\src\\assets\\slide\\222042.jpg');
+    background-image: url('../assets/slide/222042.jpg');
 }
 
 #slideset1 {
