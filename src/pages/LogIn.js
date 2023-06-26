@@ -41,6 +41,8 @@ function LoginPage() {
   }  
 
   const handleLogin1 = () => {
+    let l = [];
+
     fetch('https://capable-bejewled-seahorse.glitch.me/login', { 
       method: 'POST',
       body: JSON.stringify({ username, password }),
