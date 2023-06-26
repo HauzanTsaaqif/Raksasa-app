@@ -21,7 +21,7 @@ function SigninPage() {
 
     const handleSubmit = () => {
         if (username !== "" && password !== "" &&  password === verPassword){
-        fetch('http://192.168.100.145:8081/data-account', {
+        fetch('https://capable-bejewled-seahorse.glitch.me/data-account', {
           method: 'POST',
           body: JSON.stringify({ username, password }),
           headers: {
