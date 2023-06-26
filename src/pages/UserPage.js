@@ -48,7 +48,7 @@ function UserPage() {
     }
 
     useEffect(() => {
-        let url = `http://192.168.100.145:8081/user-nilai-siswa?username=${username}`;
+        let url = `https://capable-bejewled-seahorse.glitch.me/user-nilai-siswa?username=${username}`;
 
         if (filterKelas) {
             url += `&filterKelas=${filterKelas}`;
@@ -61,7 +61,7 @@ function UserPage() {
       }, [username, filterKelas]);
 
       useEffect(() => {
-        fetch(`http://192.168.100.145:8081/user-note?username=${username}`)
+        fetch(`https://capable-bejewled-seahorse.glitch.me/user-note?username=${username}`)
           .then(res => res.json())
           .then(data_note => setDataNote(data_note))
           .catch(err => console.log(err));
@@ -70,7 +70,7 @@ function UserPage() {
       console.log(data_note);
 
       const generatePDF = () => {
-        let url = `http://192.168.100.145:8081/user-pdf-make?username=${username}`;
+        let url = `https://capable-bejewled-seahorse.glitch.me/user-pdf-make?username=${username}`;
 
         if (filterKelas) {
             url += `&filterKelas=${filterKelas}`;
@@ -91,7 +91,7 @@ function UserPage() {
           textNote: textNote 
         };
       
-        fetch(`http://192.168.100.145:8081/input-user-note`, {
+        fetch(`https://capable-bejewled-seahorse.glitch.me/input-user-note`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
