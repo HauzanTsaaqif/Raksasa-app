@@ -28,7 +28,7 @@ function ClosingPage() {
 
   const handleSubmit = () =>{
     setIsVisible(true);
-    fetch('http://192.168.100.145:8081/data-nilai', {
+    fetch('https://capable-bejewled-seahorse.glitch.me/data-nilai', {
     method: 'POST',
     body: JSON.stringify({ nama, kelas, userId, nilai }),
     headers: {
