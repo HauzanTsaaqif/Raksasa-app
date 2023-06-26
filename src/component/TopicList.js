@@ -18,7 +18,7 @@ function TopicList( {username} ) {
     };
 
     const copyLink = () => {
-        const link = 'http://10.10.13.45:3000/materi-page?username=' + username;
+        const link = 'https://raksasa-app.vercel.app/materi-page?username=' + username;
       
         // Buat elemen input tersembunyi
         const input = document.createElement('input');
