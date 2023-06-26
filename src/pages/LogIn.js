@@ -55,7 +55,7 @@ function LoginPage() {
         if (data.success) {
           console.log('Login berhasil');
           alert(data.message);
-          history.push('/user-page', { username }); // Menggunakan react-router-dom untuk navigasi
+          window.location.href = '/user-page?username=' + username;
         } else {
           console.log('Login gagal');
           alert(data.message);
