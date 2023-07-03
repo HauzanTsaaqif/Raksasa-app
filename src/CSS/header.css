@@ -33,7 +33,7 @@ nav ul li a {
     text-decoration: none;
     color: #112B3C;
     font-family: 'Helvetica', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;  
     will-change: transform, font-size, text-shadow;
@@ -57,6 +57,6 @@ nav ul li a:hover {
     .HeadContainer img{width: 34%;}
     nav{padding: 1%;}
     nav ul li{width: 60px;}
-    nav ul li a{font-size: 100%; padding: 4%;}
+    nav ul li a{font-size: 60%; padding: 4%;}
   }
   
