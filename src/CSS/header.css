@@ -33,7 +33,7 @@ nav ul li a {
     text-decoration: none;
     color: #112B3C;
     font-family: 'Helvetica', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;  
     will-change: transform, font-size, text-shadow;
